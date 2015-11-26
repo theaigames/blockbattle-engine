@@ -1,9 +1,9 @@
 texasholdem-engine
 ============
 
-The engine for the Texas Hold 'em competition at TheAIGames.com
+The engine for the AI Block Battle competition at TheAIGames.com
 
-This version of our Texas Hold 'em engine has been set up for local use, for your own convenience. Note that this does *not* include the visualizer. Also note that this engine is largely the same as our Omaha engine, but this is the actual version we use on the website.
+This version of our AI Block Battle engine has been set up for local use, for your own convenience. Note that this does *not* include the visualizer.
 
 To compile (Windows, untested):
 
@@ -22,8 +22,8 @@ To compile (Linux):
 To run:
 
     cd [project folder]
-    java -cp bin com.theaigames.game.texasHoldem.TexasHoldem [your bot1] [your bot2] 2>err.txt 1>out.txt
+    java -cp bin com.theaigames.blockbattle.Blockbattle [your bot1] [your bot2] 2>err.txt 1>out.txt
 
 [your bot1] and [your bot2] could be any command for running a bot process. For instance "java -cp /home/dev/starterbot/bin/ main.BotStarter" or "node /home/user/bot/Bot.js"
 
-Errors will be logged to err.txt, output dump will be logged to out.txt. You can edit the saveGame() method in the main class to output extra stuff like your bot dumps.
+Errors will be logged to err.txt, output dump will be logged to out.txt. You can edit the saveGame() method in the AbstractGame class to output extra stuff like your bot dumps. If you want to quickly run the engine from Eclipse, change `DEV_MODE = false` to `DEV_MODE = true` in the main method of the Blockbattle class and provide your own bot in that method as well.
