@@ -1,4 +1,4 @@
-texasholdem-engine
+blockbattle-engine
 ============
 
 The engine for the AI Block Battle competition at TheAIGames.com
