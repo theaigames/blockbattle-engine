@@ -316,7 +316,7 @@ public class Shape {
 		corners[0] = this.field.getCell(new Point(this.location.x, this.location.y));
 		corners[1] = this.field.getCell(new Point(this.location.x + 2, this.location.y));
 		corners[2] = this.field.getCell(new Point(this.location.x, this.location.y + 2));
-		corners[3] = this.field.getCell(new Point(this.location.x, this.location.y + 2));
+		corners[3] = this.field.getCell(new Point(this.location.x + 2, this.location.y + 2));
 		
 		int counter = 0;
 		for(int i = 0; i < corners.length; i++)
